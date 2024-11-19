@@ -1,0 +1,35 @@
+/* form{
+
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 0 auto;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+label,
+input {
+  padding: 10px 0 10px 0;
+  margin-top: 5px;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Adds a border to the cells */
+  padding: 10px; /* Adds space inside each cell */
+  text-align: left; /* Aligns text to the left */
+}
+
+
+table {
+  border-collapse: collapse; /* Ensures there are no gaps between borders */
+  margin: 20px auto; /* Centers the table horizontally and adds space above */
+  width: 80%; /* Optional: Set a width for the table */
+}

@@ -1,0 +1,24 @@
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+function MyEffect() {
+  const [users, setusers] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/users")
+
+      //   .then((res) => console.log(res.data))
+      //   .then((res) => setusers(res))
+
+      .then((res) => setusers(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+  return (
+    <div>
+      <h1>Fetching Data from API</h1>
+      {console.log(users)}
+    </div>
+  );
+}
+
+export default MyEffect;
