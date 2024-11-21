@@ -11,7 +11,7 @@ form {
   flex-direction: column;
   width: 25%;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: lightskyblue;
   padding: 10px;
 }
 
@@ -21,15 +21,76 @@ input {
   margin-top: 5px;
 }
 
-th, td {
-  border: 1px solid #ddd; /* Adds a border to the cells */
+th,
+td {
+  border: 3px solid navy; /* Adds a border to the cells */
   padding: 10px; /* Adds space inside each cell */
   text-align: left; /* Aligns text to the left */
+  color: black;
 }
-
 
 table {
   border-collapse: collapse; /* Ensures there are no gaps between borders */
   margin: 20px auto; /* Centers the table horizontally and adds space above */
   width: 80%; /* Optional: Set a width for the table */
+}
+
+body {
+  background-color: lightblue;
+}
+
+#h1 {
+  /* font-style: italic; */
+  text-align: center;
+  font-weight: 450;
+}
+
+/* authenication part */
+
+#p {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+/* .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+/* .product-item { */
+  /* flex-basis: 30%;  */
+  /* adjust this value to change the width of each item */
+  /* margin: 20px;
+  background-color: #f7f7f7; */
+  /* padding: 20px;
+  border: 1px solid #ddd; */
+  /* border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+/* } */
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+.product-item {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text in each item */
+}
+
+
+#heading{
+
+  text-align: center;
+  color: navy;
 }
